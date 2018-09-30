@@ -1,6 +1,3 @@
-# Will Anderson
-RIT Computer Science '23
-
 ### Projects:
 [Please don't ask about the name](https://github.com/Programming-2/Lil-Sheds-Get-Good-In)
 
