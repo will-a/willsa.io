@@ -1,8 +1,11 @@
-# theme: jekyll-theme-cayman
-# using theme space-jekyll-theme
-
 # Site settings
+paginate: 10
+paginate_path: "page:num"
+exclude: ["README.md"]
+highlighter: rouge
+markdown: kramdown
 title: Will Anderson
+description: RIT Computer Science Class of '23
 
 # User settings
 author:
@@ -10,4 +13,12 @@ author:
     email: willa@fastmail.com
     github: will-a
     twitter: Willllsa
-    bio: RIT Computer Science \'23
+    bio: RIT Computer Science '23
+
+sidebar_image: /assets/20181127_161728.jpg
+# sidebar_background_image: /assets/20181127_161728.jpg
+
+BASE_PATH:
+
+plugins:
+    - jekyll-paginate
