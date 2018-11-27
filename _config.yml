@@ -1,2 +1,13 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+# using theme space-jekyll-theme
+
+# Site settings
 title: Will Anderson
+
+# User settings
+author:
+    name: Will Anderson
+    email: willa@fastmail.com
+    github: will-a
+    twitter: Willllsa
+    bio: RIT Computer Science \'23
