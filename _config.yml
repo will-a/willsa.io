@@ -19,6 +19,3 @@ sidebar_image: /assets/20181127_161728.jpg
 # sidebar_background_image: /assets/20181127_161728.jpg
 
 BASE_PATH:
-
-plugins:
-    - jekyll-paginate
