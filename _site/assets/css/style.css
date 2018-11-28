@@ -289,10 +289,17 @@ ul.dropdown-menu>li>a>i.fa {
 
 .comedown {
 	animation-name: fadeindown;
-	animation-duration: .5s;
+	animation-duration: .75s;
 	animation-timing-function: ease-out;
 }
 
 .delayed {
 	animation-delay: 2s;
+}
+
+.github {
+	background-color: lightslategray;
+	color: #FFFFFF;
+	font-size: 16px;
+	width: 90px;
 }
