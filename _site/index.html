@@ -115,7 +115,7 @@
 	</ul>
 </div>
 <div id="page-menu" class="comedown">
-	<a href="../index.html" style="color: #FFFFFF; text-underline-position: none;">HOME</a><br>
+	<a href="../index.html" style="color: #FFFFFF;" class="coolunderline">HOME</a><br>
 	<a href="../pages/projects.html" style="color: #FFFFFF;" class="coolunderline">PROJECTS</a>
 </div>
 <!-- sidebar.html end -->
@@ -128,17 +128,19 @@
 </div>
 
 <html>
+    <script>
+    function hideSomething() {
+        document.getElementById("Yeetyboi").style.visibility = "hidden"
+    }
+    </script>
     <body>
         <h2 class="comeup">Hi there!</h2>
         <p id="frontpagetext" class="comedown">
             I'm Will Anderson, a current RIT student studying Computer Science.
-
         </p>
-        <pre>
-            <h4>
-                
-            </h4>
-        </pre>
+        <h2>Skills</h2>
+        <button onclick="hideSomething()">Yeet me</button>
+        <p id="Yeetyboi">Yeet</p>
     </body>
 </html>
 
