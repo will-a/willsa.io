@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Lato);
 
 body{
 	color: #2c3e50;
@@ -37,7 +38,7 @@ a.nav-link i{
 a.nav-link:hover { color: #777; }
 
 #bio {
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Lato", Lato, sans-serif;
 	font-size: 11px;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -62,27 +63,9 @@ article .share .twitter:hover {
 #contact-list li:hover .fa-envelope {
 	color: #E93E30;
 }
-#contact-list li:hover .fa-pinterest {
-	color: #CC2127;
-}
-#contact-list li:hover .fa-rss {
-	color: #e74c3c;
-}
-article .share .facebook:hover {
-	color: #43609C;
-	border-color: #43609C;
-}
-article .share .gplus:hover {
-	color: #C13929;
-	border-color: #C13929;
-}
-
-#contact-list-secondary {
-	padding-bottom: 10px;
-}
 
 .page-header {
-	color: #e74c3c;
+	color: #3b536b;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 
@@ -208,6 +191,9 @@ ul.dropdown-menu>li>a>i.fa {
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
+	color: #56789b;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: x-large;
 }
 
 .pointyboi span:after {
@@ -293,6 +279,62 @@ ul.dropdown-menu>li>a>i.fa {
 	animation-timing-function: ease-out;
 }
 
+@keyframes bouncein {
+	0% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 0;
+		right: 100px;
+	}
+	80% {
+		position: relative;
+		opacity: 1;
+		right: -5px;
+	}
+	100% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+.comeinbounce {
+	animation-name: bouncein;
+	animation-duration: .5s;
+}
+
+@keyframes bounceind {
+	0% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 0;
+		right: 100px;
+	}
+	50% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 0;
+		right: 100px;
+	}
+	90% {
+		position: relative;
+		opacity: 1;
+		right: -5px;
+	}
+	100% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+.comeinbounced {
+	animation-name: bounceind;
+	animation-duration: 1s;
+}
+
 .delayed {
 	animation-delay: 2s;
 }
@@ -302,4 +344,59 @@ ul.dropdown-menu>li>a>i.fa {
 	color: #FFFFFF;
 	font-size: 16px;
 	width: 90px;
+}
+
+.btn-default {
+	background-color: #aaa;
+	color: #000000;
+	border: none;
+}
+
+#page-menu {
+	padding-top: 10px;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-family: "Ubuntu";
+	letter-spacing: 2px;
+}
+
+.coolunderline {
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.coolunderline:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.coolunderline:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.coolunderline:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+#frontpagetext {
+	font-size: 18px;
+	font-family: "Lato", Lato, sans-serif;
+	color: #282828;
 }
