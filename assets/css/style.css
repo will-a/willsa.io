@@ -65,7 +65,7 @@ article .share .twitter:hover {
 }
 
 .page-header {
-	color: #e74c3c;
+	color: #3b536b;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 
@@ -191,6 +191,9 @@ ul.dropdown-menu>li>a>i.fa {
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
+	color: #56789b;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: x-large;
 }
 
 .pointyboi span:after {
@@ -301,6 +304,37 @@ ul.dropdown-menu>li>a>i.fa {
 	animation-duration: .5s;
 }
 
+@keyframes bounceind {
+	0% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 0;
+		right: 100px;
+	}
+	50% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 0;
+		right: 100px;
+	}
+	90% {
+		position: relative;
+		opacity: 1;
+		right: -5px;
+	}
+	100% {
+		animation-timing-function: ease;
+		position: relative;
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+.comeinbounced {
+	animation-name: bounceind;
+	animation-duration: 1s;
+}
+
 .delayed {
 	animation-delay: 2s;
 }
@@ -319,7 +353,7 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 #page-menu {
-	padding-top: 50px;
+	padding-top: 10px;
 	text-align: center;
 	padding-left: 0px;
 	padding-right: 0px;
