@@ -3,6 +3,132 @@ layout: page
 title: Projects
 ---
 
-<a class="pointyboi" href="./CryptoTools.html"><span>CryptoTools</span></a><br>
-<a class="pointyboi" href="./LilShedsGetGoodIn.html"><span>LSGGI</span></a><br>
-<a class="pointyboi" href="./ScheduleBot.html"><span>Schedule Bot</span></a>
+<body>
+    <h3>Picross</h3>
+    <h5>A simple Picross game written using JavaFX</h5>
+    <form action="https://github.com/will-a/Picross">
+        <button class="pointyboi github"><span>GitHub</span></button>
+    </form>
+    <p>
+        <h4>Notable Experience Gained:</h4>
+        <ul>
+            <li>Java</li>
+            <li>JavaFX</li>
+            <li>UI Design</li>
+            <li>Inheritance</li>
+        </ul>
+        <br>
+        This picross game is inspired by <a href="liouh.com/picross2">Henry Liouh's picross game</a> 
+        which I play frequently as a time killer. While still a work in progress,
+        it is currently at an MVP stage and awaits further changes such as match
+        history, click and drag functionality, and multiple solutions. Getting it
+        to its current MVP stage took me about 2 hours of work.
+    </p><br><br>
+
+    <h3>TRV-Synthetics</h3>
+    <h5>A project done during Travelers' 2021 InJam hackathon</h5>
+    <p>
+        <h4>Notable Experience Gained:</h4>
+        <ul>
+            <li>JavaScript</li>
+            <li>Express.JS</li>
+            <li>MongoDB</li>
+            <li>GET/POST Requests</li>
+            <li>API Creation</li>
+            <li>JSON Usage</li>
+            <li>Puppeteer</li>
+        </ul>
+        <br>
+        This project was done during Travelers' 24-hour hackathon, InJam. The team's goal
+        was to create a modular, scalable framework for synthetic scripts that navigate
+        through the Travelers website similar to a human, ensuring customers can use services. 
+        This provides a level of service assurance beyond checking the service's server status,
+        as just because a service's server is running does not guarantee the website is functioning
+        properly. Working with 6 other Travelers employees, we made a functional MVP by the end
+        of the hackathon and have been reached out to about continuing development of our idea. 
+        <br><br>
+        Without very limited prior knowledge of Express.JS and JavaScript, I implemented an API
+        to interface with our MongoDB database. GET routes would return JSON responses, while
+        POSTS accepted JSON bodies within the requests. I also developed the very first script
+        for the framework, providing my team a reference point for the scripts they would develop
+        further down the line. During and after the hackathon, I was praised for my willingness
+        to take on challenges, my versatility, and my affinity to learn whatever I needed to. 
+        <br><br>
+    </p>
+
+    <h3>CryptoTools</h3>
+    <h5>A repository of helpful cryptography-related Python scripts/functions</h5>
+    <form action="https://github.com/will-a/CryptoTools">
+        <button class="pointyboi github" onclick=""><span>GitHub</span></button>
+    </form>
+    <p>
+        <h4>Notable Experience Gained:</h4>
+        <ul>
+            <li>Runtime optimization</li>
+            <li>Cryptographical math</li>
+            <li>Python</li>
+        </ul>
+        <br>
+        This is a repository of Python scripts and functions I made while doing
+        my cryptography homework. Functionality includes finding additive/multiplicative
+        inverses, polynomial multiplication modded by AES irreducible polynomial, and
+        the Extended Euclidean Algorithm.
+    </p><br><br>
+
+    <h3>LSGGI</h3>
+    <h5>A fighting platforming game made using Python</h5>
+    <form action="https://github.com/Programming-2/Lil-Sheds-Get-Good-In">
+        <button class="pointyboi github" onclick=""><span>GitHub</span></button>
+    </form>
+    <p>
+        <h4>Notable Experience Gained:</h4>
+        <ul>
+            <li>Teamwork</li>
+            <li>Workflow</li>
+            <li>Object-oriented programming</li>
+            <li>Python</li>
+        </ul>
+        <br>
+        This game was made as a semester-long project in a computer programming course in my high school.
+        It was developed using Python's pygame module and intended to be a humorous game, hence the name comprised of 
+        multiple references to internet personalities.
+        The characters in the game are all video game versions of the team members, excluding Kemul and Lil' Shed.
+        Originally, the plan was for everyone to program their own characters, but as we progressed in the project
+        we realized it would be better for one person to do all of the characters and just have people do their own art.
+        Obviously, we aren't graphic designers and hopefully none of us pursue a career in that field, but we did our best.
+        <br><br>
+        My contribution to the project was to code all of the characters and all of the entities that interacted with the characters, such as 
+        ranged attacks, melee attacks, and health bars. This was no small feat and I had to use a lot of my own time outside of the classroom
+        to write all of the code necessary. I spent hours a day writing the code and debugging others' code, and rewrote several classes that 
+        were written by other people to optimize the code and make it more easily usable. For example, attack objects originally took 14 arguments 
+        in their constructors and were interacting very poorly with the environment, so I rewrote it to take 3 arguments and work hitch-free. I 
+        did this by attaching it to the player that initiated the attack, making it so the required values were passed automatically which drastically 
+        increased ease of use as well as efficiency.
+        <br><br>
+        I also added several easter eggs to the game, such as a hidden Pong game that could be accessed by clicking one of the corners of the menu.
+        All-in-all, the game was very fun to make and I gained valuable experience in teamwork and workflows. We were required to plan our actions 
+        ahead of time, loosely simulating a real production environment, and we had meetings often to discuss the best course of action for the game.
+    </p><br><br>
+
+    <h3>Schedule Bot</h3>
+    <h5>A Discord bot that tracks users' schedules and events</h5>
+    <form action="https://github.com/ThirtyEightySeven/Schedule-Bot">
+        <button class="pointyboi github" onclick=""><span>GitHub</span></button>
+    </form>
+    <p>
+        <h4>Notable Experience Gained:</h4>
+        <ul>
+            <li>Object-oriented programming</li>
+            <li>Asynchronous calls</li>
+            <li>API usage</li>
+            <li>Python</li>
+        </ul>
+        <br>
+        This is a Discord bot a friend and I made as a solution for checking if our friends were busy
+        without having to manually ask them. The bot stores users' schedules after having them use commands in
+        the chat to input classes, locations, and time ranges and provides functionality to print everyone's schedule 
+        as well as check who is currently free. The information is stored locally using a Python library called Pickle
+        so the data would persist through bot restarts, as the bot was usually hosted by either a Raspberry Pi or on one
+        of our computers.
+    </p>
+</body>
