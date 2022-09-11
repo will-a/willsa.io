@@ -1,7 +1,7 @@
 <!-- sidebar.html -->
 <header class="sidebar-header comedown" role="banner">
 	<a href="{{ site.BASE_PATH }}/">
-		<img src="../assets/profile_picture.jpg" class="img-circle" />
+		<img src="{{ site.sidebar_image }}" class="img-circle" width="150" height="150" />
 	</a>
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
@@ -37,11 +37,16 @@
 			</a>
 		</li>
 		{% endif %}
+		{% if site.author.github %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
+				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 	</ul>
 </div>
-<div id="page-menu" class="comedown">
-	<a href="../index.html" style="color: #FFFFFF;" class="coolunderline">HOME</a><br>
-	<a href="../pages/projects.html" style="color: #FFFFFF;" class="coolunderline">PROJECTS</a><br>
+<!-- <div id="page-menu" class="comedown">
 	<a href="../pages/2021-8Resume.pdf" style="color: #FFFFFF;" class="coolunderline">RESUME</a><br>
-</div>
+</div> -->
 <!-- sidebar.html end -->

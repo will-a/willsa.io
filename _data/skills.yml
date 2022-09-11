@@ -1,0 +1,21 @@
+- name: Experienced
+  skills:
+    - Python
+    - Splunk
+    - git
+    - Unix/Linux
+    - Java/OOP
+    - GitHub Actions
+- name: Some Experience
+  skills:
+    - Ubuntu Server
+    - JavaScript (Express.js)
+    - C
+    - C#
+    - SQL
+    - ElasticSearch
+    - Kibana
+    - Assembly
+- name: Learning
+  skills:
+    - Rust

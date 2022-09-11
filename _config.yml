@@ -5,16 +5,16 @@ exclude: ["README.md"]
 highlighter: rouge
 markdown: kramdown
 title: Will Anderson
-description: RIT Computer Science Class of '23
+description: RIT Computer Science Class of '22
 
 # User settings
 author:
     name: Will Anderson
     email: wsa3263@rit.edu
     github: will-a
-    bio: RIT Computer Science '22
+    linkedin: willsa
+    bio: "<span style=\"color: #EF9860;\">RIT</span> Computer Science '22"
 
-sidebar_image: /assets/20181127_161728.jpg
-# sidebar_background_image: /assets/20181127_161728.jpg
+sidebar_image: /assets/profile_picture_2022.jpg
 
 BASE_PATH:
