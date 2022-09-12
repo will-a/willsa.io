@@ -2,14 +2,16 @@
 @import url(//fonts.googleapis.com/css?family=Lato);
 
 body{
-	color: #2c3e50;
+	color: #cbcbcb;
+	background-color: #222222;
+	font-family: 'Lato';
 }
 
 .sidebar {
 	position: fixed;
 	top: 0px;
 	padding-top: 10%;
-	background-color: #2c3e50;
+	background-color: #171717;
 	color: #fff;
 }
 
@@ -19,7 +21,6 @@ body{
 }
 .sidebar-header .title{
 	letter-spacing: 3px;
-	text-transform: uppercase;
 }
 
 .sidebar-header .title a{
@@ -38,7 +39,7 @@ a.nav-link i{
 a.nav-link:hover { color: #777; }
 
 #bio {
-	font-family: "Lato", Lato, sans-serif;
+	font-family: "Fira Mono";
 	font-size: 11px;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -65,8 +66,8 @@ article .share .twitter:hover {
 }
 
 .page-header {
-	color: #3b536b;
-	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+	color: #cbcbcb;
+	font-family: 'Fira Mono';
 }
 
 @media only screen and (min-width: 768px) {
@@ -98,16 +99,18 @@ article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
 article img { max-width: 100%; }
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
+h1,h2,h3 { font-family: 'Fira Mono'; }
 article.home h1,
 article.home h2,
 article.home h3,
 article.home h4,
 article.home h5,
 article.home h6 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Fira Mono';
 	color: #f2756a;
 }
+
+h4, h5,h6 { font-family: 'Lato'; }
 
 article.home h1 a,
 article.home h2 a,
@@ -128,8 +131,13 @@ article.home h4 a:hover {
 }
 
 footer {
-	padding-top: 15px;
-	font-family: 'Ubuntu';
+	position: fixed;
+	bottom: 0;
+	font-family: 'Lato';
+}
+
+hr {
+	border-top: #cbcbcb;
 }
 
 /* nav-vertical-tabs component */
@@ -178,9 +186,9 @@ ul.dropdown-menu>li>a>i.fa {
 	border: none;
 	/* color: #000000; */
 	text-align: center;
-	font-size: 28px;
+	/* font-size: 28px; */
 	padding: 0px;
-	width: 200px;
+	/* width: 200px; */
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 5px;
@@ -192,7 +200,7 @@ ul.dropdown-menu>li>a>i.fa {
 	position: relative;
 	transition: 0.5s;
 	/* color: #56789b; */
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Lato', sans-serif;
 	/* font-size: x-large; */
 }
 
@@ -216,7 +224,7 @@ ul.dropdown-menu>li>a>i.fa {
 @keyframes yeet {
 	0%   {background-color: #00ACEE}
 	50%  {background-color: #C13929}
-	100% {background-color: #00ACEE}
+	100% {background-color: #00ee00}
 }
 
 .yeet {
@@ -340,15 +348,17 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 .github {
-	background-color: lightslategray;
-	color: #FFFFFF;
+	background-color: #333;
+	color: #cbcbcb;
 	font-size: 16px;
 	width: 90px;
+	display: inline-block;
+  	vertical-align: middle;
 }
 
 .btn-default {
-	background-color: #aaa;
-	color: #000000;
+	background-color: #272727;
+	color: #cbcbcb;
 	border: none;
 }
 
@@ -359,7 +369,7 @@ ul.dropdown-menu>li>a>i.fa {
 	padding-right: 0px;
 	padding-bottom: 20px;
 	font-size: 20px;
-	font-family: "Ubuntu";
+	font-family: "Lato";
 	letter-spacing: 2px;
 }
 
@@ -378,7 +388,7 @@ ul.dropdown-menu>li>a>i.fa {
 	content: "";
 	position: absolute;
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	bottom: 0;
 	left: 0;
 	background-color: #FFF;
@@ -397,6 +407,55 @@ ul.dropdown-menu>li>a>i.fa {
 
 #frontpagetext {
 	font-size: 18px;
-	font-family: "Lato", Lato, sans-serif;
-	color: #282828;
+	font-family: "Lato", sans-serif;
+	color: #cbcbcb;
+}
+
+.content {
+	padding: 0 18px;
+	/* background-color: rgba(255, 255, 255, 0.1); */
+	color: #cbcbcb;
+	/* box-shadow: inset 0 0 10000px 10px rgba(255, 255, 255, 0.1); */
+}
+
+.hiddencontent {
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
+.hiddencontent:after {
+	content:"";
+    position:absolute;
+    top:210px;
+    left:0;
+    height:40px;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,0), #222222);
+}
+
+.showncontent {
+	height: auto;
+}
+
+.show_more {
+	padding: 10px 10px;
+}
+
+.show_more a {
+	color: #cbcbcb;
+	font-family: 'Lato';
+	font-size: 20;
+	text-decoration: none;
+}
+
+.section-header {
+	background-color: rgba(255, 255, 255, 0.05);
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 24px;
+	font-family: 'Fira Mono';
 }

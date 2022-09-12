@@ -34,6 +34,22 @@
     activateTab();
   };
 
+  $(".show_more a").on("click", function() {
+    var $this = $(this);
+    var $content = $this.parent().prev("div.content");
+    var linkText = $this.text().toUpperCase();
+
+    if (linkText === "SHOW MORE") {
+      linkText = "Show less";
+      $content.switchClass("hiddencontent", "showncontent", 200, "swing");
+    } else {
+      linkText = "Show more";
+      $content.switchClass("showncontent", "hiddencontent", 200, "swing");
+    }
+
+    $this.text(linkText);
+  });
+
   // run init on document ready
   $(document).ready(init);
 

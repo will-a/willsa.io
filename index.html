@@ -1,48 +1,92 @@
 ---
 layout: page
-title: Hi there!
 ---
 <html>
-    <body>
-        <!-- <h2 class="comeinbounce">Hi there!</h2> -->
-        <p id="frontpagetext" class="comedown">
-            I'm Will Anderson, a fourth-year RIT student studying Computer Science.
-        </p>
-        <h3 class="comeinbounced">Work</h2>
-        <div style="margin: 20px;">
-            <h4 class="comeinbounced"><b>Travelers</b> — <i>Software Engineering Intern</i></h4>
-            <h5 class="comeinbounced"><i>June 2021 - Current</i></h5>
-            <ul class="comedown" style="animation-duration: 1.1s;">
-                <li>Contributed to the Data Ingestion stream while collaborating with an Agile team of software engineers focused on database modernization.</li>
-                <li>Developed an SQL script to check for orphaned rows in the consumer purchases database, ensuring proper service functionality for thousands of customers.</li>
-                <li>Integrated the SQL script with a batch script and job scheduler to send out periodic emails to relevant employees about the database status.</li>
-                <li>Utilized Talend to process and move data from unrefined tables to fully relational tables.</li>
-            </ul>
-            <br><br>
-            <h4 class="comeinbounced"><b>NIC Systems Corporation</b> — <i>Development Intern</i></h4>
-            <h5 class="comeinbounced"><i>May 2019 - August 2019</i></h5>
-            <ul class="comedown" style="animation-duration: 1.1s;">
-                <li>Designed, developed, and programmed wastewater remote pump stations for the city of Meriden using RSLogix while collaborating with others to ensure the project moved forward as planned.</li>
-                <li>Utilized Excel to generate and sort data requested by colleagues in order to efficiently purchase products from manufacturers.</li>
-            </ul>
+    <meta>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
+    </meta>
+    <body class="comein" style="padding-top: 2%;">
+        <div class="section-header" style="color: #EA6B8D">Education</div>
+        <div class="content">
+            {% for degree in site.data.education %}
+                <h4>{{ degree.university }}</h4>
+                <div style="margin-left: 10px;">
+                    <h5>{{ degree.name }}</h5>
+                    <div style="margin-left: 10px;">
+                        {% if degree.end %}
+                        <p>{{ degree.start }} - {{ degree.end }}</p>
+                        {% else %}
+                        <p>{{ degree.start }} - Current (Expected {{ degree.expected }})</p>
+                        {% endif %}
+                        <p>GPA: {{ degree.gpa }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <br>
         </div>
-        <h3 class="comeinbounced">Languages</h2>
-        <ul class="comedown" style="animation-duration: 1.1s;">
-            <li>Python</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>C#</li>
-            <li>C</li>
-            <li>MIPS Assembly</li>
-        </ul>
-        <h3 class="comeinbounced">Courses</h2>
-        <ul class="comedown" style="animation-duration: 1.1s;">
-            <li>Analysis of Algorithms (Java)</li>
-            <li>Principles of Data Management (SQL)</li>
-            <li>Concepts of Parallel and Distributed Systems (C#)</li>
-            <li>Concepts of Computer Systems (MIPS Assembly)</li>
-            <li>Mechanics of Programming (C)</li>
-            <li>Introduction to Software Engineering (Java)</li>
-        </ul>
+
+        <div class="section-header" style="color: #928ADE;">Work</div>
+        <div class="content hiddencontent">
+            {% for job in site.data.work %}
+            <h4><b>{{ job.organization }}</b> — <i>{{ job.title }}</i></h4>
+            <h5><i>{{ job.start_month_year }} - {{ job.end_month_year }}</i></h5>
+            <ul>
+                {% for accomplishment in job.accomplishments %}
+                <li>{{ accomplishment }}</li>
+                {% endfor %}
+            </ul>
+            <br>
+            {% endfor %}
+        </div>
+        <div class="show_more">
+            <a class="coolunderline" href="" onclick="return false;">Show more</a>
+        </div>
+        
+        <div class="section-header" style="color: #94DA9A;">Projects</div>
+        <div class="content hiddencontent">
+            {% for project in site.data.projects %}
+                <h4 style="display: inline-block; vertical-align: middle;"><b>{{ project.name }}</b></h4>
+                {% if project.github_link %}
+                <form style="display: inline-block; vertical-align: middle;" action="{{ project.github_link }}">
+                    <button class="pointyboi github" onclick=""><span>GitHub</span></button>
+                </form>
+                {% endif %}
+                <div style="margin-left: 20px;">
+                    <h5>{{ project.description }}</h5>
+                    <h5>Experience Gained:</h5>
+                    <ul>
+                        {% for experience in project.experience_gained %}
+                        <li>{{ experience }}</li>
+                        {% endfor %}
+                    </ul>
+                    <h5>Contributions:</h5>
+                    <ul>
+                        {% for contribution in project.contributions %}
+                        <li>{{ contribution }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+            <br>
+        </div>
+        <div class="show_more">
+            <a class="coolunderline" href="" onclick="return false;">Show more</a>
+        </div>
+
+        <div class="section-header" style="color: #F8E67A;">Skills</div>
+        <div class="content hiddencontent">
+            {% for skill_level in site.data.skills %}
+                <h4>{{ skill_level.name }}</h4>
+                <ul>
+                {% for skill in skill_level.skills %}
+                    <li>{{ skill }}</li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+            <br>
+        </div>
+        <div class="show_more">
+            <a class="coolunderline" href="" onclick="return false;">Show more</a>
+        </div>
     </body>
 </html>

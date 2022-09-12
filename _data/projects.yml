@@ -1,0 +1,63 @@
+- name: Discord Server Statistics
+  description: Raspberry Pi Ubuntu server running Python script for data ingestion, ElasticSearch database service, and Kibana frontend for data visualization of Discord message trends
+  github_link: https://github.com/will-a/discord-importer
+  experience_gained:
+    - Python/discord.py
+    - HTTP requests, ElasticSearch API requests
+    - Ubuntu server setup and administration
+    - Kibana view creation
+    - Data ingestion and log design
+  contributions:
+    - Personal project, all work was done by myself.
+- name: TRV-Synthetics
+  description: "Travelers' 2021 InJam hackathon project: Modular and scalable framework to run synthetic web validation scripts."
+  experience_gained:
+    - JavaScript
+    - Express.js
+    - MongoDB
+    - HTTP requests (Postman)
+    - API creation
+    - JSON
+    - Puppeteer
+  contributions:
+    - Designed and implemented Express.js REST API for front-back end communication.
+    - Puppeteer script development.
+- name: This website
+  description: Simple personal website using Jekyll, Bundle, HTML, CSS, and JS.
+  github_link: https://github.com/will-a/will-a.github.io
+  experience_gained:
+    - Jekyll/static templates
+    - HTML/CSS/JS/JQuery
+    - UI design
+  contributions:
+    - Personal project, add work was done by myself.
+- name: Picross
+  description: A simple Picross game written using JavaFX
+  github_link: https://github.com/will-a/Picross
+  experience_gained:
+    - Java
+    - JavaFX
+    - UI Design
+    - Inheritance
+  contributions:
+    - Personal project, all work was done by myself.
+- name: LSGGI
+  description: A fighting platforming game made using Python
+  github_link: https://github.com/Programming-2/Lil-Sheds-Get-Good-In
+  experience_gained:
+    - Python
+    - OOP
+    - Workflows
+    - Collaboration
+  contributions:
+    - Implemented all characters and in-game entities. (bullets, melee attacks, health bars, etc.)
+    - Game design and iteration.
+- name: Schedule Bot
+  description: A Discord bot that tracks users' schedules and events
+  github_link: https://github.com/ThirtyEightySeven/Schedule-Bot
+  experience_gained:
+    - Asyncronous Python
+    - API usage (discord.py)
+    - OOP
+  contributions:
+    - Implemented message handling and calendar model layer.

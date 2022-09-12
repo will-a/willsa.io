@@ -58,8 +58,13 @@
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
+			{% if site.author.linkedin %}
+			<a type="button" class="navbar-toggle nav-link" href="https://linkedin.com/in/{{ site.author.linkedin }}">
+				<i class="fa fa-linkedin"></i>
+			</a>
+			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="../assets/profile_picture.jpg" class="img-circle" />
+				<img src="{{ site.sidebar_image }}" class="img-circle" />
 				{{ site.title }}
 			</a>
 		</div>
@@ -76,11 +81,6 @@
 
 	<div class="col-sm-3 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat !important;{% endif %}">
 		{% include sidebar.html %}
-	</div>
-
-	<div class="col-sm-9 col-sm-offset-3" style="width: 800px;">
-		{{ content }}
-
 		<footer>
 			<hr/>
 			<p>
@@ -89,8 +89,14 @@
 		</footer>
 	</div>
 
+	<div class="col-sm-9 col-sm-offset-3" style="width: 800px;">
+		{{ content }}
+
+	</div>
+
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 </body>
 </html>
