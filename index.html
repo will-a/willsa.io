@@ -47,9 +47,7 @@ layout: page
             {% for project in site.data.projects %}
                 <h4 style="display: inline-block; vertical-align: middle;"><b>{{ project.name }}</b></h4>
                 {% if project.github_link %}
-                <form style="display: inline-block; vertical-align: middle;" action="{{ project.github_link }}">
-                    <button class="pointyboi github" onclick=""><span>GitHub</span></button>
-                </form>
+                    <a class="pointyboi github" href="{{ project.github_link }}"><span>GitHub</span></a>
                 {% endif %}
                 <div style="margin-left: 20px;">
                     <h5>{{ project.description }}</h5>
