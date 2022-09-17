@@ -361,6 +361,11 @@ ul.dropdown-menu>li>a>i.fa {
   	vertical-align: middle;
 }
 
+.github:hover, .github:visited, .github:active {
+	text-decoration: none;
+	color: inherit;
+}
+
 .btn-default {
 	background-color: #272727;
 	color: #cbcbcb;
