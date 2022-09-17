@@ -359,6 +359,13 @@ ul.dropdown-menu>li>a>i.fa {
 	width: 90px;
 	display: inline-block;
   	vertical-align: middle;
+
+	/* Make element unselectable */
+	user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
 }
 
 .github:hover, .github:visited, .github:active {
