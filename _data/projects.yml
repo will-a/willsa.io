@@ -24,7 +24,7 @@
     - Puppeteer script development.
 - name: This website
   description: Simple personal website using Jekyll, Bundle, HTML, CSS, and JS.
-  github_link: https://github.com/will-a/will-a.github.io
+  github_link: https://github.com/will-a/willsa.io
   experience_gained:
     - Jekyll/static templates
     - HTML/CSS/JS/JQuery
