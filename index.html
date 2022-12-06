@@ -9,17 +9,17 @@ layout: page
         <div class="section-header" style="color: #EA6B8D">Education</div>
         <div class="content">
             {% for degree in site.data.education %}
-                <h4>{{ degree.university }}</h4>
+                <h4>{{ degree.university }} - {{ degree.name }}</h4>
                 <div style="margin-left: 10px;">
-                    <h5>{{ degree.name }}</h5>
-                    <div style="margin-left: 10px;">
-                        {% if degree.end %}
-                        <p>{{ degree.start }} - {{ degree.end }}</p>
-                        {% else %}
-                        <p>{{ degree.start }} - Current (Expected {{ degree.expected }})</p>
-                        {% endif %}
-                        <p>GPA: {{ degree.gpa }}</p>
-                    </div>
+                    {% if degree.minor %}
+                    <h5>{{ degree.minor }} Minor</h5>
+                    {% endif %}
+                    {% if degree.end %}
+                    <p>{{ degree.start }} - {{ degree.end }}</p>
+                    {% else %}
+                    <p>{{ degree.start }} - Current (Expected {{ degree.expected }})</p>
+                    {% endif %}
+                    <p>GPA: {{ degree.gpa }}</p>
                 </div>
             {% endfor %}
             <br>
