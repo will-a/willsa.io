@@ -6,6 +6,7 @@
     - Unix/Linux
     - Java/OOP
     - GitHub Actions
+    - VBA/Office
 - name: Some Experience
   skills:
     - Ubuntu Server
@@ -14,7 +15,7 @@
     - C#
     - SQL
     - Assembly
+    - MatLab
 - name: Learning
   skills:
     - Rust
-    - MatLab
