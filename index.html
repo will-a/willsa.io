@@ -29,7 +29,11 @@ layout: page
         <div class="content hiddencontent">
             {% for job in site.data.work %}
             <h4><b>{{ job.organization }}</b> — <i>{{ job.title }}</i></h4>
+            {% if job.end_month_year %}
             <h5><i>{{ job.start_month_year }} - {{ job.end_month_year }}</i></h5>
+            {% else %}
+            <h5><i>{{ job.start_month_year }} - Current</i></h5>
+            {% endif %}
             <ul>
                 {% for accomplishment in job.accomplishments %}
                 <li>{{ accomplishment }}</li>
