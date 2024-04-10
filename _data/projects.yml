@@ -1,3 +1,14 @@
+- name: Path of Exile League Start Auditor
+  description: Web app written using the Dash Python library and Pandas that takes in a Path of Exile build using either a URL or base64-encoded string and shows the general cost of the uniques and cluster jewels in the build in the first few days of the league. Line graphs of price trends are also included for each item. The aim is to assist me in choosing an inexpensive and strong build while also allowing me to see when the optimal time for buying an item generally is.
+  github_link: https://github.com/will-a/LeagueStartAuditor
+  experience_gained:
+    - Python
+    - Dash (Python framework)
+    - Pandas (Python library)
+    - base64 encoding and decoding
+    - UI design
+  contributions:
+    - Personal project, all work was done by myself.
 - name: Discord Server Statistics
   description: Raspberry Pi Ubuntu server running Python script for data ingestion, ElasticSearch database service, and Kibana frontend for data visualization of Discord message trends
   github_link: https://github.com/will-a/discord-importer
