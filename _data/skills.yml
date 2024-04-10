@@ -2,10 +2,14 @@
   skills:
     - Python
     - Splunk
+    - Bash
     - git
     - Unix/Linux
     - Java/OOP
     - GitHub Actions
+    - REST APIs
+    - JSON
+    - HTML/CSS
     - VBA/Office
 - name: Some Experience
   skills:
@@ -16,6 +20,10 @@
     - SQL
     - Assembly
     - MatLab
+    - Dash
+    - XML
+    - Bootstrap
+    - Pandas
 - name: Learning
   skills:
     - Rust
