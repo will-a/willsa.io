@@ -28,17 +28,21 @@ layout: page
         <div class="section-header" style="color: #928ADE;">Work</div>
         <div class="content hiddencontent">
             {% for job in site.data.work %}
-            <h4><b>{{ job.organization }}</b> — <i>{{ job.title }}</i></h4>
-            {% if job.end_month_year %}
-            <h5><i>{{ job.start_month_year }} - {{ job.end_month_year }}</i></h5>
-            {% else %}
-            <h5><i>{{ job.start_month_year }} - Current</i></h5>
-            {% endif %}
-            <ul>
-                {% for accomplishment in job.accomplishments %}
-                <li>{{ accomplishment }}</li>
+            <h4><b>{{ job.organization }}</b></h4>
+            <div style="margin-left: 0px;">
+                {% for rank in job.ranks %}
+                {% if rank.end_month_year %}
+                <h5><i>{{ rank.title }} ⸱ {{ rank.start_month_year }} - {{ rank.end_month_year }}</i></h5>
+                {% else %}
+                <h5><i>{{ rank.title }} ⸱ {{ rank.start_month_year }} - Current</i></h5>
+                {% endif %}
+                <ul>
+                    {% for accomplishment in rank.accomplishments %}
+                    <li>{{ accomplishment }}</li>
+                    {% endfor %}
+                </ul>
                 {% endfor %}
-            </ul>
+            </div>
             <br>
             {% endfor %}
         </div>

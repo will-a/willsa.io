@@ -1,29 +1,36 @@
 - organization: General Dynamics Electric Boat
-  title: Systems Engineer
-  start_month_year: June 2023
+  ranks:
+    - title: Systems Engineer II
+      start_month_year: September 2024
+    - title: Systems Engineer I
+      start_month_year: June 2023
+      end_month_year: September 2024
 - organization: Tesla
-  title: Factory Firmware Data Science Intern
-  start_month_year: September 2021
-  end_month_year: May 2022
-  accomplishments:
-    - Designed and developed Splunk dashboards and searches enabling engineers and technicians to properly ascertain production line status and issues.
-    - Implemented modular and scalable Splunk version control repository with automated GitHub Actions CI/CD pipelines.
-    - Migrated CI/CD pipelines to new GitHub instance, supporting global factory firmware development and infrastructure.
-    - Developed interactive Python CLI for automatic rotation of service account credentials across Jenkins, GitHub, Kubernetes, etc.
-    - Performed deep dives into line-side issues, deployed production flow mitigations, and collaborated with product owners to improve production process.
+  ranks:
+    - title: Factory Firmware Data Science Intern
+      start_month_year: September 2021
+      end_month_year: May 2022
+      accomplishments:
+        - Designed and developed Splunk dashboards and searches enabling engineers and technicians to properly ascertain production line status and issues.
+        - Implemented modular and scalable Splunk version control repository with automated GitHub Actions CI/CD pipelines.
+        - Migrated CI/CD pipelines to new GitHub instance, supporting global factory firmware development and infrastructure.
+        - Developed interactive Python CLI for automatic rotation of service account credentials across Jenkins, GitHub, Kubernetes, etc.
+        - Performed deep dives into line-side issues, deployed production flow mitigations, and collaborated with product owners to improve production process.
 - organization: Travelers
-  title: Software Engineering Intern
-  start_month_year: June 2021
-  end_month_year: August 2021
-  accomplishments:
-    - Contributed to the Data Ingestion stream while collaborating with an Agile team of software engineers focused on database modernization.
-    - Developed an SQL script to check for orphaned rows in the consumer purchases database, ensuring proper service functionality for thousands of customers.
-    - Integrated the SQL script with a batch script and job scheduler to send out periodic emails to relevant employees about the database status.
-    - Utilized Talend to process and move data from unrefined tables to fully relational tables.
+  ranks:
+    - title: Software Engineering Intern
+      start_month_year: June 2021
+      end_month_year: August 2021
+      accomplishments:
+        - Contributed to the Data Ingestion stream while collaborating with an Agile team of software engineers focused on database modernization.
+        - Developed an SQL script to check for orphaned rows in the consumer purchases database, ensuring proper service functionality for thousands of customers.
+        - Integrated the SQL script with a batch script and job scheduler to send out periodic emails to relevant employees about the database status.
+        - Utilized Talend to process and move data from unrefined tables to fully relational tables.
 - organization: NIC Systems Corp.
-  title: Development Intern
-  start_month_year: May 2019
-  end_month_year: August 2019
-  accomplishments:
-    - Designed, developed, and programmed wastewater remote pump stations for the city of Meriden using RSLogix while collaborating with others to ensure the project moved forward as planned.
-    - Utilized Excel to generate and sort data requested by colleagues in order to efficiently purchase products from manufacturers.
+  ranks:
+    - title: Development Intern
+      start_month_year: May 2019
+      end_month_year: August 2019
+      accomplishments:
+        - Designed, developed, and programmed wastewater remote pump stations for the city of Meriden using RSLogix while collaborating with others to ensure the project moved forward as planned.
+        - Utilized Excel to generate and sort data requested by colleagues in order to efficiently purchase products from manufacturers.
