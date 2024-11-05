@@ -5,6 +5,9 @@
     - Bash
     - git
     - Unix/Linux
+    - JavaScript/TypeScript
+    - NextJS
+    - React
     - Java/OOP
     - GitHub Actions
     - REST APIs
@@ -13,6 +16,7 @@
     - VBA/Office
 - name: Some Experience
   skills:
+    - MongoDB
     - Ubuntu Server
     - JavaScript (Express.js)
     - C
@@ -24,6 +28,3 @@
     - XML
     - Bootstrap
     - Pandas
-- name: Learning
-  skills:
-    - Rust
