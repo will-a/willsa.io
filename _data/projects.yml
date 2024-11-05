@@ -1,10 +1,11 @@
-- name: Path of Exile League Start Auditor
-  description: Web app written using the Dash Python library and Pandas that takes in a Path of Exile build using either a URL or base64-encoded string and shows the general cost of the uniques and cluster jewels in the build in the first few days of the league. Line graphs of price trends are also included for each item. The aim is to assist me in choosing an inexpensive and strong build while also allowing me to see when the optimal time for buying an item generally is.
-  github_link: https://github.com/will-a/LeagueStartAuditor
+- name: Path of Exile Recall
+  description: Web app written using NextJS, React, and MongoDB to visualize timeseries Path of Exile economy data from past leagues with the goal of optimizing future league starts to gain a competitive advantage over other players.
   experience_gained:
-    - Python
-    - Dash (Python framework)
-    - Pandas (Python library)
+    - NextJS
+    - React
+    - TypeScript
+    - MongoDB
+    - Node/npm
     - base64 encoding and decoding
     - UI design
   contributions:
