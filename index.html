@@ -6,27 +6,8 @@ layout: page
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
     </meta>
     <body class="comein" style="padding-top: 2%;">
-        <div class="section-header" style="color: #EA6B8D">Education</div>
-        <div class="content">
-            {% for degree in site.data.education %}
-                <h4>{{ degree.university }} - {{ degree.name }}</h4>
-                <div style="margin-left: 10px;">
-                    {% if degree.minor %}
-                    <h5>{{ degree.minor }} Minor</h5>
-                    {% endif %}
-                    {% if degree.end %}
-                    <p>{{ degree.start }} - {{ degree.end }}</p>
-                    {% else %}
-                    <p>{{ degree.start }} - Current (Expected {{ degree.expected }})</p>
-                    {% endif %}
-                    <p>GPA: {{ degree.gpa }}</p>
-                </div>
-            {% endfor %}
-            <br>
-        </div>
-
         <div class="section-header" style="color: #928ADE;">Work</div>
-        <div class="content hiddencontent">
+        <div class="content">
             {% for job in site.data.work %}
             <h4><b>{{ job.organization }}</b></h4>
             <div style="margin-left: 0px;">
@@ -46,8 +27,24 @@ layout: page
             <br>
             {% endfor %}
         </div>
-        <div class="show_more">
-            <a class="coolunderline" href="" onclick="return false;">Show more</a>
+
+        <div class="section-header" style="color: #EA6B8D">Education</div>
+        <div class="content">
+            {% for degree in site.data.education %}
+                <h4>{{ degree.university }} - {{ degree.name }}</h4>
+                <div style="margin-left: 10px;">
+                    {% if degree.minor %}
+                    <h5>{{ degree.minor }} Minor</h5>
+                    {% endif %}
+                    {% if degree.end %}
+                    <p>{{ degree.start }} - {{ degree.end }}</p>
+                    {% else %}
+                    <p>{{ degree.start }} - Current (Expected {{ degree.expected }})</p>
+                    {% endif %}
+                    <p>GPA: {{ degree.gpa }}</p>
+                </div>
+            {% endfor %}
+            <br>
         </div>
         
         <div class="section-header" style="color: #94DA9A;">Projects</div>
